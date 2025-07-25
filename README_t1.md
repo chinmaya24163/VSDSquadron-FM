@@ -91,4 +91,38 @@ set_io testwire   17
 | `hw_clk`    | 20               | Header for optional ext. oscillator |
 | `testwire`  | 17               | Header pin for counter output       |
 
----
+These pins are based on the board schematic and datasheet.
+
+### Step 3: Integration with VSDSquadron FPGA Mini Board
+
+Referred to the `VSDSquadron FPGA Mini Board Datasheet` for:
+
+USB-C connection setup
+
+FTDI USB drivers (for programming interface)
+
+Installation instructions for required tools (e.g., `yosys`,`nextpnr`,`icestorm`)
+
+**Build & Flash Instructions**
+
+Used the provided `Makefile` to compile and flash the design:
+
+# 1. Clean any previous builds
+make clean
+
+# 2. Synthesize and build the bitstream
+make build
+
+# 3. Flash the design onto the FPGA board (requires sudo)
+sudo make flash
+
+**Output**
+
+The onboard blue LED lights up continuously.
+
+The `testwire` toggles at a visible frequency and can be observed on a scope or test LED.
+
+![1_](_images/1_.png)
+
+![2_](_images/2_.jpg)
+
