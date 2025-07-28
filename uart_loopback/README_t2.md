@@ -58,3 +58,29 @@ set_io uart_rx 36
 | `uart_tx` | 37  | TX output from FPGA (to PC) |
 | `uart_rx` | 36  | RX input to FPGA (from PC)  |
 These match the UART header pins on the VSDSquadron FPGA Mini board.
+```
+
+## Step 3: Circuit Diagram
+
+The physical connection setup for UART loopback is shown below:
+
+![uart_loopback_circuit_diagram](images/uart_loopback_circuit_diagram.png)
+
+Note: Since this is an internal loopback, no jumper wires are needed between TX and RX.
+
+## Step 4: Build & Flash
+Run the following in the project directory:
+```text
+make clean       # Remove old build files
+make build       # Synthesize and map
+sudo make flash  # Flash the bitstream to FPGA
+```
+
+## Step 5: Testing
+
+Connect to the board via a serial terminal like picocom, PuTTY, or minicom.
+Baud rate: 115200 (or as specified in your design).
+Type any character — the same character should appear back immediately.
+Example:
+You type: A
+You see: A echoed back → loopback successful
