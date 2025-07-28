@@ -87,3 +87,33 @@ You see: A echoed back → loopback successful
 
 ![clean_build](images/clean_build.png)
 ![flash](images/flash.png)
+
+## Testing & Verification
+
+**Objective:**
+To verify successful UART loopback on the VSDSquadron FPGA Mini board using the uart_trx.v design.
+
+**Procedure:**
+
+1.  Setup Serial Terminal
+Open WSL and connect to the USB serial port using picocom:
+```text
+sudo picocom -b 115200 /dev/ttyUSB0
+```
+
+2. Transmit Test Data
+Type any character or string (e.g., Hello) into the terminal.
+
+3. Observe Response
+The exact same data should appear back on the screen, confirming the loopback is working.
+
+**Result:**
+```text
+You type:   Hello
+You see:    Hello
+```
+
+**Conclusion:**
+The UART interface on the FPGA is operational, and the internal loopback logic is functioning correctly. This confirms successful implementation of the UART RX–TX loopback path.
+
+![verify](images/verify.png)
