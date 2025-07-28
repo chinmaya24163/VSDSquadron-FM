@@ -84,3 +84,6 @@ Type any character — the same character should appear back immediately.
 Example:
 You type: A
 You see: A echoed back → loopback successful
+
+![clean_build](images/clean_build.png)
+![flash](images/flash.png)
