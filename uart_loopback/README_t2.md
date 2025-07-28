@@ -33,6 +33,7 @@ TX ----> | FPGA UART | ----> RX
 **UART Loopback Architecture**
 
 ![uart_loopback_block_diagram](images/uart_loopback_block_diagram.png)
+
                  
 - PC TX connects to uart_rx on the FPGA.
 
