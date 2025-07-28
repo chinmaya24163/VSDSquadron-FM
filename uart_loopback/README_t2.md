@@ -117,3 +117,7 @@ You see:    Hello
 The UART interface on the FPGA is operational, and the internal loopback logic is functioning correctly. This confirms successful implementation of the UART RX–TX loopback path.
 
 ![verify](images/verify.png)
+
+### UART Loopback Demo Video
+
+[YouTube Short – UART Loopback Demo](https://youtube.com/shorts/-nlyX51ccuw?si=1iC9lm4j6AW9BM2w)
