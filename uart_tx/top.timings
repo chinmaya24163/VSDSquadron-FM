@@ -1,0 +1,52 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        lc40_4_28_7 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_18429 (DanUART.state[6])
+        odrv_4_28_18429_22283 (Odrv4) I -> O: 0.649 ns
+        t286 (LocalMux) I -> O: 1.099 ns
+        inmux_5_30_26386_26425 (InMux) I -> O: 0.662 ns
+        lc40_5_30_3 (LogicCell40) in3 -> lcout: 0.874 ns
+     4.775 ns net_22502 (uarttx_SB_LUT4_O_I3_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I3[2])
+        odrv_5_30_22502_26114 (Odrv4) I -> O: 0.649 ns
+        t326 (Span4Mux_h4) I -> O: 0.543 ns
+        t325 (Span4Mux_v1) I -> O: 0.344 ns
+        t324 (LocalMux) I -> O: 1.099 ns
+        inmux_2_25_14274_14320 (InMux) I -> O: 0.662 ns
+        lc40_2_25_4 (LogicCell40) in0 -> lcout: 1.285 ns
+     9.358 ns net_10246 (uarttx_SB_LUT4_O_I3_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[2])
+        odrv_2_25_10246_10267 (Odrv4) I -> O: 0.649 ns
+        t179 (LocalMux) I -> O: 1.099 ns
+        inmux_2_27_14517_14555 (InMux) I -> O: 0.662 ns
+        lc40_2_27_2 (LogicCell40) in1 -> lcout: 1.232 ns
+    13.000 ns net_10538 (DanUART.buf_tx_SB_DFFESR_Q_5_R_SB_LUT4_O_I2_SB_LUT4_I2_O[0])
+        odrv_2_27_10538_10706 (Odrv4) I -> O: 0.649 ns
+        t192 (Span4Mux_v1) I -> O: 0.344 ns
+        t191 (LocalMux) I -> O: 1.099 ns
+        inmux_4_26_22076_22120 (InMux) I -> O: 0.662 ns
+        lc40_4_26_6 (LogicCell40) in3 -> lcout: 0.874 ns
+    16.629 ns net_18182 (DanUART.buf_tx_SB_DFFESS_Q_E)
+        odrv_4_26_18182_21909 (Odrv4) I -> O: 0.649 ns
+        t277 (Span4Mux_h0) I -> O: 0.252 ns
+        t276 (Span4Mux_h3) I -> O: 0.397 ns
+        t275 (LocalMux) I -> O: 1.099 ns
+        inmux_2_27_14520_14588 (CEMux) I -> O: 0.702 ns
+    19.728 ns net_14588 (DanUART.buf_tx_SB_DFFESS_Q_E)
+        lc40_2_27_1 (LogicCell40) ce [setup]: 0.000 ns
+    19.728 ns net_10537 (DanUART.buf_tx[0])
+
+Resolvable net names on path:
+     1.491 ns ..  3.901 ns DanUART.state[6]
+     4.775 ns ..  8.073 ns uarttx_SB_LUT4_O_I3_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I3[2]
+     9.358 ns .. 11.768 ns uarttx_SB_LUT4_O_I3_SB_DFFE_Q_E_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[2]
+    13.000 ns .. 15.755 ns DanUART.buf_tx_SB_DFFESR_Q_5_R_SB_LUT4_O_I2_SB_LUT4_I2_O[0]
+    16.629 ns .. 19.728 ns DanUART.buf_tx_SB_DFFESS_Q_E
+                  lcout -> DanUART.buf_tx[0]
+
+Total number of logic levels: 5
+Total path delay: 19.73 ns (50.69 MHz)
+
