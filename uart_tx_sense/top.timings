@@ -1,0 +1,53 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        lc40_15_1_1 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_56570 (U1.state[5])
+        odrv_15_1_56570_56749 (Odrv4) I -> O: 0.649 ns
+        t186 (LocalMux) I -> O: 1.099 ns
+        inmux_14_3_56915_56942 (InMux) I -> O: 0.662 ns
+        lc40_14_3_2 (LogicCell40) in0 -> lcout: 1.285 ns
+     5.186 ns net_53028 (send_pulse_SB_LUT4_I2_I3_SB_LUT4_O_I3[2])
+        odrv_14_3_53028_53172 (Odrv4) I -> O: 0.649 ns
+        t177 (Span4Mux_v2) I -> O: 0.450 ns
+        t176 (LocalMux) I -> O: 1.099 ns
+        inmux_16_5_64806_64870 (InMux) I -> O: 0.662 ns
+        lc40_16_5_5 (LogicCell40) in3 -> lcout: 0.874 ns
+     8.921 ns net_60937 (send_pulse_SB_LUT4_I2_I3[1])
+        t235 (LocalMux) I -> O: 1.099 ns
+        inmux_15_4_60871_60891 (InMux) I -> O: 0.662 ns
+        t52 (CascadeMux) I -> O: 0.000 ns
+        lc40_15_4_1 (LogicCell40) in2 -> lcout: 1.205 ns
+    11.888 ns net_56980 (send_pulse_SB_LUT4_I1_I3[1])
+        t214 (LocalMux) I -> O: 1.099 ns
+        inmux_14_3_56914_56948 (InMux) I -> O: 0.662 ns
+        lc40_14_3_3 (LogicCell40) in0 -> lcout: 1.285 ns
+    14.934 ns net_53029 (send_pulse_SB_LUT4_I1_I3_SB_LUT4_I3_O[1])
+        t173 (LocalMux) I -> O: 1.099 ns
+        inmux_14_2_56785_56843 (InMux) I -> O: 0.662 ns
+        lc40_14_2_6 (LogicCell40) in0 -> lcout: 1.285 ns
+    17.980 ns net_52873 (U1.buf_tx_SB_DFFESS_Q_S)
+        odrv_14_2_52873_53039 (Odrv4) I -> O: 0.649 ns
+        t169 (Span4Mux_v1) I -> O: 0.344 ns
+        t168 (LocalMux) I -> O: 1.099 ns
+        inmux_13_1_52785_52862 (SRMux) I -> O: 0.636 ns
+    20.709 ns net_52862 (U1.buf_tx_SB_DFFESS_Q_S)
+        lc40_13_1_6 (LogicCell40) sr [setup]: 0.384 ns
+    21.093 ns net_48914 (U1.bits_sent[0])
+
+Resolvable net names on path:
+     1.491 ns ..  3.901 ns U1.state[5]
+     5.186 ns ..  8.047 ns send_pulse_SB_LUT4_I2_I3_SB_LUT4_O_I3[2]
+     8.921 ns .. 10.682 ns send_pulse_SB_LUT4_I2_I3[1]
+    11.888 ns .. 13.649 ns send_pulse_SB_LUT4_I1_I3[1]
+    14.934 ns .. 16.695 ns send_pulse_SB_LUT4_I1_I3_SB_LUT4_I3_O[1]
+    17.980 ns .. 20.709 ns U1.buf_tx_SB_DFFESS_Q_S
+                  lcout -> U1.bits_sent[0]
+
+Total number of logic levels: 6
+Total path delay: 21.09 ns (47.41 MHz)
+
