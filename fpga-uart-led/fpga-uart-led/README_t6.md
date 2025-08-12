@@ -201,6 +201,6 @@ IMAGE
 
 ---
 
-### UART Transmission Demo Video
+### Demo Video
 
 [YouTube Short – controlling LEDs using commands received on the VSDSquadron FPGA Mini via UART](https://youtube.com/shorts/u2ZnJNXo_8g?si=fnzwOK6UrvkQFQKA)
