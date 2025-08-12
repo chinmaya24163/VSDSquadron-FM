@@ -1,0 +1,6 @@
+set_io uart_tx_pin 14
+set_io uart_rx_pin 15
+set_io clk_12mhz 20
+set_io ext_led0 25
+set_io ext_led1 26
+set_io ext_led2 27
